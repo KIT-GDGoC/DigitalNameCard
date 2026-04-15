@@ -46,15 +46,13 @@
 
 ### 3. クローン（複製）したリポジトリを、自分のGitHubアカウントにコピーする
 
-1. クローンしたリポジトリのディレクトリに移動します。
-
-   ```bash
-    cd DigitalNameCard
-    ```  
+1. Google Cloud Shellの画面の左上にある「ファイル」アイコンをクリックし、「Open Folder」を選択して、クローンした `DigitalNameCard` フォルダを開きます。
 
 2. 以下のコマンドを実行して、リモートリポジトリを自分のGitHubアカウントに変更します。
 
     ```bash
+    # 1行ずつ実行してください
+    cd DigitalNameCard
     git remote set-url origin https://github.com/あなたのユーザー名/DigitalNameCard.git  
     ```
 
@@ -71,14 +69,56 @@
 
 1. Cloud Shellの左上にある「ファイル」アイコンをクリックし、エディタを開きます。
 2. `DigitalNameCard` フォルダの中から、`one`, `two`, `three`, `portfolio` のいずれか好きなテンプレートを選びます。
-3. 選んだテンプレートフォルダ内の `index.html` や `index.css` を開き、AI（ChatGPTやGitHub Copilotなど）に以下のように指示を出してみましょう。
+
+※選ぶテンプレートによって、サイトのデザインや構成が異なります。以下は各テンプレートのイメージです。
+
+**テンプレート「One」**
+
+![](https://res.cloudinary.com/dbf2ta8pg/image/upload/v1776247653/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-04-15_183209_resexb.png)
+
+~~
+
+**テンプレート「Two」**
+
+![](https://res.cloudinary.com/dbf2ta8pg/image/upload/v1776247653/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-04-15_183503_hhgzyy.png)
+
+~~
+
+**テンプレート「Three」**
+
+![](https://res.cloudinary.com/dbf2ta8pg/image/upload/v1776247653/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-04-15_183529_ciekvj.png)
+
+~~
+
+**テンプレート「Portfolio」**
+
+![](https://res.cloudinary.com/dbf2ta8pg/image/upload/v1776247653/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-04-15_184230_tdadjv.png)
+
+~~
+
+3. 選んだテンプレートフォルダ内の `index.html` や `index.css` を開き、AI（画面右のGemini など）に以下のように指示を出してみましょう。
    - 「名前を『〇〇 太郎』に変えて」
    - 「背景色をパステルブルーにして」
    - 「自己紹介のセクションを追加して」
-4. AIが提案したコードを貼り付けて、サイトがどう変わるか確認します。
+
+4. プレビューは、次のセッション「ウェブでプレビュー」を確認してください。
+
+5. AIが提案したコードを貼り付けて、サイトがどう変わるか確認します。
    - Cloud Shellの「ウェブでプレビュー」機能（右上の四角いアイコン）を使うと、編集中のサイトをブラウザで確認できます。
 
-### 5. 変更のコミットとプッシュ
+### 5. ウェブでプレビュー
+
+画面左側に、画像のようなアイコンが記されていると思います。
+
+![](https://res.cloudinary.com/dbf2ta8pg/image/upload/v1776247652/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-04-15_185123_bolfk1.png)
+
+1. その中から、四角が積んである「Extension」を選択してください。
+2. 「Extension」の中から、「Live Server」を検索し、選択してください。
+3. 「Live Server」をインストールしてください。
+4. インストールが完了したら、編集している `index.html` を右クリックし、「Open with Live Server」を選択してください。
+5. ブラウザが自動で開き、編集した内容が反映されたサイトが表示されます。
+
+### 6. 変更のコミットとプッシュ
 
 1. 編集が終わったら、Cloud Shellのターミナルで以下のコマンドを実行して変更を保存（コミット）し、GitHubにアップロード（プッシュ）します。
 
@@ -100,5 +140,4 @@
 
 - [HTMLの基本 (html.md)](./手順書など/html.md)
 - [CSSの基本 (css.md)](./手順書など/css.md)
-
 ※このファイルは、ハンズオン担当者である須藤が作成した[プログラム](https://github.com/s-taku0502/markdown_converter)によって、Markdown ファイルをPDF 化したものです。
