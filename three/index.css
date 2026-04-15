@@ -1,0 +1,23 @@
+/* 企業風テンプレートのスタイル */
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #111;
+    font-family: sans-serif;
+}
+
+.business-card {
+    width: 455px;
+    height: 275px;
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.links {
+    margin-top: 40px;
+}

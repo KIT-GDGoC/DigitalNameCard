@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+    font-family: sans-serif;
+}
+
+.business-card {
+    width: 455px;
+    height: 275px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.right img {
+    width: 80px;
+    border-radius: 50%;
+}
