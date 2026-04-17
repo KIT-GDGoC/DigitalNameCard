@@ -1,54 +1,97 @@
-/* ポートフォリオページのスタイル */
-
+/* =========================
+  基本設定（全員）
+========================= */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f6f8;
-    color: #333;
+    background-color: #f5f5f5;
 }
 
+
+/* =========================
+  ヘッダー
+========================= */
 header {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #1f2937;
+    background-color: #4a90e2;
     color: white;
+    text-align: center;
+    padding: 40px 20px;
 }
 
+
+/* =========================
+  セクション
+========================= */
 section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+
+/* 見出し */
 h2 {
-    border-left: 5px solid #2563eb;
-    padding-left: 10px;
-    margin-bottom: 20px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
 }
 
-.skills ul {
+
+/* =========================
+  スキル
+========================= */
+ul {
     list-style: none;
     padding: 0;
 }
 
-.skills li {
-    background: white;
-    margin: 10px 0;
-    padding: 12px;
+li {
+    background-color: #e3f2fd;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+/* =========================
+  カード
+========================= */
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
     border-radius: 8px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.card h3 {
+    margin-top: 0;
 }
 
+
+/* =========================
+  フッター
+========================= */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1f2937;
-    color: white;
+    color: #666;
+}
+
+
+/* =========================
+  ▼ 上級者向け（任意）
+========================= */
+
+/* ホバーで少し浮く */
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+/* レスポンシブ（画面が広いと横並び） */
+@media (min-width: 768px) {
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+    }
 }

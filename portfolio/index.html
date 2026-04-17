@@ -1,29 +1,72 @@
-<!-- ポートフォリオページ -->
+<!-- =========================
+ ポートフォリオテンプレート（統合版）
+ 初心者：そのまま書き換え
+ 経験者：コメントアウトを外す
+ 上級者：自由に追加OK
+========================= -->
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="/portfolio/index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
+
+    <!-- =========================
+     ヘッダー（全員）
+    ========================= -->
     <header>
-        <h1>Takumi Portfolio</h1>
+        <h1>あなたの名前</h1>
+        <p>〇〇に興味があります（例：Web開発 / デザイン）</p>
+
+        <!-- ▼ 経験者・上級者向け（任意） -->
+        <!--
         <p>Information Engineering Student / Developer</p>
+        -->
     </header>
 
+
+    <!-- =========================
+     About（全員）
+    ========================= -->
     <section class="about">
         <h2>About Me</h2>
+
+        <!-- ▼ 初心者 -->
+        <p>
+            〇〇学科〇年です。<br>
+            最近は〇〇を勉強しています。
+        </p>
+
+        <!-- ▼ 経験者・上級者（書ける人だけ） -->
+        <!--
         <p>
             情報工学を学ぶ学生です。  
-            Webアプリ開発、防災システム、データ可視化に興味があります。
+            Web開発、防災システム、データ可視化に興味があります。
         </p>
+        -->
     </section>
 
+
+    <!-- =========================
+     Skills（レベル分岐）
+    ========================= -->
     <section class="skills">
         <h2>Skills</h2>
+
+        <!-- ▼ 初心者 -->
+        <ul>
+            <li>HTML / CSS（勉強中）</li>
+            <li>JavaScript（少し）</li>
+        </ul>
+
+        <!-- ▼ 経験者・上級者（使う場合は上を消す or 追加） -->
+        <!--
         <ul>
             <li>HTML / CSS / JavaScript</li>
             <li>React / Next.js</li>
@@ -31,34 +74,101 @@
             <li>Supabase / PostgreSQL</li>
             <li>Java / Python</li>
         </ul>
+        -->
     </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
 
+    <!-- =========================
+     Works / Learning（重要）
+    ========================= -->
+    <section class="projects">
+        <h2>Works / Learning</h2>
+
+        <!-- ▼ 全員書ける -->
+        <div class="card">
+            <h3>デジタル名刺</h3>
+            <p>ハンズオンでWeb名刺を作成しました。</p>
+        </div>
+
+        <!-- ▼ 初心者（デフォルト） -->
+        <div class="card">
+            <h3>学習中のこと</h3>
+            <p>HTMLとCSSを使ったWebページ作成を勉強しています。</p>
+        </div>
+
+        <!-- ▼ 経験者・上級者（使う場合はコメントアウト解除） -->
+        <!--
         <div class="card">
             <h3>CityRiskView</h3>
-            <p>
-                災害時の都市脆弱性を可視化する防災ダッシュボードシステム。
-            </p>
+            <p>災害時の都市脆弱性を可視化する防災ダッシュボード。</p>
         </div>
 
         <div class="card">
             <h3>Weather App</h3>
-            <p>
-                JavaとAPIを用いた天気予報アプリケーション。
-            </p>
+            <p>JavaとAPIを用いた天気予報アプリ。</p>
         </div>
+        -->
+
+        <!-- ▼ 上級者：自由追加 -->
+        <!--
+        <div class="card">
+            <h3>自由プロジェクト</h3>
+            <p>好きな内容を書いてOK</p>
+        </div>
+        -->
     </section>
 
+
+    <!-- =========================
+     Future（全員・重要）
+    ========================= -->
+    <section class="future">
+        <h2>Future</h2>
+
+        <!-- ▼ 初心者 -->
+        <p>今後は〇〇に挑戦してみたいです。</p>
+
+        <!-- ▼ 経験者・上級者 -->
+        <!--
+        <p>
+            防災×ITの分野でシステム開発を行い、
+            社会に貢献できるエンジニアを目指しています。
+        </p>
+        -->
+    </section>
+
+
+    <!-- =========================
+     Contact（全員）
+    ========================= -->
     <section class="contact">
         <h2>Contact</h2>
+
+        <!-- ▼ 初心者 -->
+        <p>GitHub: https://github.com/yourname</p>
+
+        <!-- ▼ 上級者（任意） -->
+        <!--
         <p>Email: example@example.com</p>
-        <p>GitHub: github.com/yourname</p>
+        <p>X: https://twitter.com/yourname</p>
+        -->
     </section>
 
+
+    <!-- =========================
+     フッター
+    ========================= -->
     <footer>
-        <p>© 2026 Takumi Portfolio</p>
+        <!-- 今日の日付を書こう -->
+        <p>作成日:2026-04-17</p>
+        <p>作成場所:金沢工業大学</p>
+        <p>イベント名:<a href="https://gdsckit.connpass.com/event/389736/">KIT Welcome Event</a></p>
+
+        <!-- 更新したら日付を変えてみよう（任意） -->
+        <!-- <p>更新日:2026-04-17</p> -->
+        <p>© 2026 My Portfolio</p>
     </footer>
+
 </body>
+
 </html>
